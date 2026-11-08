@@ -1,0 +1,48 @@
+/* About page — add to your existing stylesheet.
+   Uses your existing .wrap, .eyebrow, .lead and h1 em styles. */
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(2rem, 6vw, 6rem);
+    align-items: center;
+}
+
+.about-media img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 0.95;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 2.5rem 0 0;
+}
+
+.stats strong {
+    display: block;
+    font-size: 2rem;
+    line-height: 1;
+    color: #f6c96b; /* swap for your gold variable */
+}
+
+.stat-label {
+    display: block;
+    margin-top: 0.4rem;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: #8a8d94;
+}
+
+@media (max-width: 860px) {
+    .about {
+        grid-template-columns: 1fr;
+    }
+}
