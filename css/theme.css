@@ -345,12 +345,7 @@ html[data-theme="light"] .hr-fade {
 }
 
 html[data-theme="light"][dir="rtl"] .hr-fade {
-    background: linear-gradient(
-        to left,
-        var(--hr-bg) 0%,
-        rgba(246,244,239,.92) 35%,
-        transparent 75%
-    );
+    background: #fff;
 }
 
 .ct-title {
